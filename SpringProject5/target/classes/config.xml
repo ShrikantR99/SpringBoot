@@ -1,0 +1,51 @@
+<beans xmlns="http://www.springframework.org/schema/beans" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://www.springframework.org/schema/beans 
+ https://www.springframework.org/schema/beans/spring-beans.xsd"> 
+ 
+  <!-- Auto wiring using byName -->  
+  <!-- 
+  
+  <bean class="com.Spring.example5.SpringProject5.Mobile" id="mob1">
+  	<property name="brand" value="OnePlus"/>
+  	<property name="ram" value="8"/>
+  	<property name="cost" value="30000"/>
+  </bean>
+  
+  <bean class="com.Spring.example5.SpringProject5.Mobile" id="mob">
+  	<property name="brand" value="Samsung"/>
+  	<property name="ram" value="16"/>
+  	<property name="cost" value="45000"/>
+  </bean>
+  
+  <bean id="per" class="com.Spring.example5.SpringProject5.Person"
+  autowire="byName">
+  </bean>
+  -->
+  
+  
+  <!-- Auto wiring using byType -->
+  <!--  
+  <bean class="com.Spring.example5.SpringProject5.Mobile">
+  	<property name="brand" value="OnePlus"/>
+  	<property name="ram" value="8"/>
+  	<property name="cost" value="30000"/>
+  </bean>
+  
+  <bean id="per" class="com.Spring.example5.SpringProject5.Person"
+  autowire="byType">
+  </bean>
+  -->
+  
+  
+  <!-- auto wiring using constructor -->
+  <bean class="com.Spring.example5.SpringProject5.Mobile" id="mob">
+  	<property name="brand" value="OnePlus"/>
+  	<property name="ram" value="8"/>
+  	<property name="cost" value="30000"/>
+  </bean>
+   <bean id="per" class="com.Spring.example5.SpringProject5.Person"
+  autowire="constructor">
+  </bean>
+  
+</beans> 
