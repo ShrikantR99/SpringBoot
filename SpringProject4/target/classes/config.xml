@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://www.springframework.org/schema/beans 
+  https://www.springframework.org/schema/beans/spring-beans.xsd"> 
+  
+  	<bean class="com.Spring.example4.SpringProject4.KodNestClasses" id="kodclass">
+  	
+  		<property name="tr" ref="train2"/>
+  	</bean>
+  	
+  	<bean class="com.Spring.example4.SpringProject4.Trainer" id="train1">
+  	
+  		<property name="t_id" value="1"/>
+  		<property name="t_name" value="Shrikant"/>
+  	</bean>
+  	
+  	<bean class="com.Spring.example4.SpringProject4.Trainer" id="train2">
+  	
+  		<property name="t_id" value="2"/>
+  		<property name="t_name" value="Ajay"/>
+  	</bean>
+  </beans>
+  	
